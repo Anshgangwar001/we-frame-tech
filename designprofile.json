@@ -1,0 +1,191 @@
+{
+    "page": "Franchise Dashboard",
+    "layout": {
+      "type": "grid",
+      "grid_columns": 3,
+      "sidebar_width": "20%",
+      "main_content_width": "80%",
+      "spacing": {
+        "outer_padding": "20px",
+        "card_gap": "16px"
+      }
+    },
+    "sidebar": {
+      "position": "left",
+      "background_color": "#0f3c52",
+      "sections": [
+        {
+          "title": "Navigation",
+          "items": [
+            "Home",
+            "Stages & Checklist",
+            "Upload Docs",
+            "Preferred Vendors",
+            "Tech Stack",
+            "Targets",
+            "Zee Sales Targets",
+            "MAI Settings",
+            "Pending Questions"
+          ]
+        },
+        {
+          "footer": ["Logout"]
+        }
+      ]
+    },
+    "header": {
+      "right_corner": {
+        "user_avatar": "circular image",
+        "settings_icon": "gear"
+      }
+    },
+    "cards": [
+      {
+        "title": "Account Progress",
+        "type": "progress_circle",
+        "progress": "85%",
+        "completed_steps": ["Profile Setup", "Initial Training", "Legal Documents"],
+        "remaining_steps": ["Financial Integration", "Final Review"],
+        "colors": {
+          "progress_circle": "#1976d2",
+          "completed_check": "#22c55e",
+          "pending_gray": "#cbd5e1"
+        }
+      },
+      {
+        "title": "Total Franchisees Onboard",
+        "type": "stats_card",
+        "total": 14,
+        "growth": "+7.4%",
+        "stages": {
+          "Stage 1": 2,
+          "Stage 2": 7,
+          "Stage 3": 5
+        },
+        "avatars": ["list of user avatars"],
+        "highlight_user": "Vidit Mishra",
+        "colors": {
+          "growth_positive": "#16a34a",
+          "stage_labels": ["#0284c7", "#2563eb", "#9333ea"]
+        }
+      },
+      {
+        "title": "Financial Wellbeing",
+        "type": "kpi_card",
+        "total_franchisees": 20,
+        "growth": "-2.1%",
+        "target": "$500,000",
+        "current": "$450,000",
+        "highlight_user": "Yuvraj Thakur",
+        "colors": {
+          "growth_negative": "#dc2626",
+          "target_box": "#f3f4f6",
+          "current_box": "#f9fafb"
+        }
+      },
+      {
+        "title": "Key Insights & Feedback",
+        "type": "insights_card",
+        "sales_growth": "10%",
+        "top_performer": true,
+        "feedback": "Franchisees are requesting more detailed training materials."
+      },
+      {
+        "title": "Prospect Leads",
+        "type": "list_card",
+        "leads": [
+          {"name": "Wade Warren", "stage": "Initial Inquiry"},
+          {"name": "Ava Wright", "stage": "Initial Inquiry"},
+          {"name": "Cody Fisher", "stage": "Initial Inquiry"}
+        ]
+      }
+    ],
+    "uploads_section": {
+      "title": "My Uploads",
+      "search_bar": true,
+      "filters_button": true,
+      "columns": [
+        "Document Name",
+        "Document Type",
+        "AI App Inclusion",
+        "Dashboard Inclusion",
+        "Stage Access",
+        "Actions"
+      ],
+      "rows": [
+        {
+          "document": "Tech requirements.pdf",
+          "type": "Legal",
+          "ai_inclusion": true,
+          "dashboard_inclusion": true,
+          "stage_access": "Full",
+          "actions": ["Delete", "Edit"]
+        },
+        {
+          "document": "Dashboard screenshot.jpg",
+          "type": "Vendors & Assets",
+          "ai_inclusion": true,
+          "dashboard_inclusion": true,
+          "stage_access": "Onboarding",
+          "actions": ["Delete", "Edit"]
+        },
+        {
+          "document": "Dashboard prototype recording.mp4",
+          "type": "Technology",
+          "ai_inclusion": false,
+          "dashboard_inclusion": false,
+          "stage_access": "Franchisee",
+          "actions": ["Delete", "Edit"]
+        },
+        {
+          "document": "Financial Overview",
+          "type": "Financial",
+          "ai_inclusion": true,
+          "dashboard_inclusion": false,
+          "stage_access": "Prospect",
+          "actions": ["Delete", "Edit"]
+        },
+        {
+          "document": "UX Design Guidelines.docx",
+          "type": "Legal",
+          "ai_inclusion": false,
+          "dashboard_inclusion": true,
+          "stage_access": "Onboarding",
+          "actions": ["Delete", "Edit"]
+        },
+        {
+          "document": "Dashboard Interaction.aep",
+          "type": "Technology",
+          "ai_inclusion": false,
+          "dashboard_inclusion": true,
+          "stage_access": "Prospect",
+          "actions": ["Delete", "Edit"]
+        },
+        {
+          "document": "Briefing call recording.mp3",
+          "type": "Financial",
+          "ai_inclusion": true,
+          "dashboard_inclusion": false,
+          "stage_access": "Prospect",
+          "actions": ["Delete", "Edit"]
+        }
+      ]
+    },
+    "typography": {
+      "font_family": "Inter, sans-serif",
+      "heading_weight": "600",
+      "body_weight": "400",
+      "sizes": {
+        "title": "18px",
+        "body": "14px",
+        "small": "12px"
+      }
+    },
+    "interactions": {
+      "search": "live filtering of uploads",
+      "filters": "opens filter sidebar",
+      "toggle_ai_inclusion": "switch for AI training dataset",
+      "actions": ["Delete confirmation modal", "Edit inline form"]
+    }
+  }
+  
